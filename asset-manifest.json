@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hillstorm_hotels/static/css/main.fef2d54a.css",
-    "main.js": "/hillstorm_hotels/static/js/main.7221035e.js",
+    "main.js": "/hillstorm_hotels/static/js/main.522eca34.js",
     "static/media/mosque.svg": "/hillstorm_hotels/static/media/mosque.305c983ed037ea70737e4440c765ec8a.svg",
     "static/media/testHotelCover.jpg": "/hillstorm_hotels/static/media/testHotelCover.3dc0b22cca921af67121.jpg",
     "static/media/luxury.svg": "/hillstorm_hotels/static/media/luxury.af6abb5829ded916f1beca6f9af1140d.svg",
@@ -43,10 +43,10 @@
     "static/media/yellowline.svg": "/hillstorm_hotels/static/media/yellowline.3f919c07f9245a3b0948769161b346e0.svg",
     "static/media/empty.svg": "/hillstorm_hotels/static/media/empty.030bb66461e36c4b7c6d2ad64916f2f4.svg",
     "main.fef2d54a.css.map": "/hillstorm_hotels/static/css/main.fef2d54a.css.map",
-    "main.7221035e.js.map": "/hillstorm_hotels/static/js/main.7221035e.js.map"
+    "main.522eca34.js.map": "/hillstorm_hotels/static/js/main.522eca34.js.map"
   },
   "entrypoints": [
     "static/css/main.fef2d54a.css",
-    "static/js/main.7221035e.js"
+    "static/js/main.522eca34.js"
   ]
 }
