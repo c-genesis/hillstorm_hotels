@@ -107,6 +107,9 @@
     color: #000;
     transition: all 0.5s ease-in-out;
 }
+.listerone-black:hover{
+    color: #FFF;
+}
 .explorer:hover{
     transition: all 0.3s ease-in-out;
     color: #ffb901;

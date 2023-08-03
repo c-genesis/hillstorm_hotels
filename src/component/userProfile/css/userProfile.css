@@ -1,0 +1,21 @@
+/* My Reservations  */
+
+.user-profile-my-reservations-hotel-main-text{
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 38px; /* 133.333% */
+    letter-spacing: 1.44px;
+}
+
+.user-profile-my-reservations-hotel-sub-text{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 123.077% */
+    letter-spacing: 0.52px;
+}

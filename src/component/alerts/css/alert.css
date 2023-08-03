@@ -1,0 +1,10 @@
+.custom-alert{
+    display: block;
+    opacity: 0;
+    z-index: 1000;
+    transition: all 1s;
+}
+
+.custom-alert-visible{
+    opacity: 1;
+}

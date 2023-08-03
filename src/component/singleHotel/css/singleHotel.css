@@ -1,0 +1,128 @@
+.single-hotel-hotel-name{
+    color: #000;
+    font-family: Raleway;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 111.111% */    
+}
+
+.single-hotel-hotel-rating{
+    color: #000;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 123.077% */    
+}
+
+.single-hotel-hotel-room-count{
+    color: var(--grey, #9B9B9B);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 123.077% */    
+}
+
+.single-hotel-additional-rooms-container{
+    border-radius: 3px;
+    background-color: #FFF;
+    border: 1px solid var(--grey, #9B9B9B);
+}
+
+.single-hotel-additional-text{
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.single-hotel-rooms-title{
+    color: #000;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+}
+
+.single-hotel-filter-rooms-label-text{
+    color: #000;
+    font-family: Raleway;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;    
+}
+
+.single-hotel-filter-rooms-input{
+    border-radius: 5px;
+    border: 1px solid var(--grey, #9B9B9B);
+    background: #FFF;    
+}
+
+.single-hotel-rooms-pricing-container{
+    border-radius: 10px 10px 0px 0px;
+    background: var(--native, #FFF);
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.10);    
+}
+
+.single-hotel-rooms-room-id-text{
+    color: #000;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.single-hotel-price-text{
+    color: #000;
+    font-family: Raleway;
+    font-size: 15.75px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.63px;    
+}
+
+.single-hotel-background-text{
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */    
+}
+
+.single-hotel-background-name-text{
+    color: #000;
+    font-family: Raleway;
+    font-size: 19.059px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25.412px; /* 133.333% */    
+}
+
+.single-hotel-background-hotel-info-container{
+    border-radius: 8.471px 8.471px 0px 0px;
+    border: 0px solid var(--grey, #9B9B9B);
+    background: var(--native, #FFF);
+    box-shadow: 0px 4.235293865203857px 10.588234901428223px 0px rgba(125, 119, 119, 0.10), 1.0588234663009644px 0px 4.235293865203857px 0px rgba(0, 0, 0, 0.10);    
+}
+
+.single-hotel-footer-header{
+    color: var(--native, #1F1F1F);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: 6.3px;    
+}

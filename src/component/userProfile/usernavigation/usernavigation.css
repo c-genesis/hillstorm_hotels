@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.usergeneral{
+    padding: 20px;
+    background: white;
+    box-shadow: 4px 200px 22px 0px rgba(255, 255, 255, 0.82);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    /* z-index: 1; */
+}
+.navigationlogo{
+    width: 110px;
+}
+.navlist{
+    list-style: none;
+    /* color: #000; */
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--native, #1F1F1F);
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 123.077% */    
+}
+.navlist.active{
+    color: #FFB901;
+}
+.navlist:hover{
+    color: #FFB901;
+    transition: all 0.5s ease-in-out;
+}
+.navside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    min-width: 524px;
+    align-self: center;
+}
+.barss{
+    display: none;
+}
+
+@media screen and (max-width: 834px) {
+    .barss{
+        display: block;
+        transition: all 1s ease-in-out;
+    }
+    .navside{
+        flex-direction: column;
+        background-color: #6d5513;
+        position: fixed;
+        top:50px;
+        right: 0;
+        border-radius: 10px;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        z-index: 1;
+        height: 330px;
+        min-width: 230px;
+        padding: 30px;
+        width: 30px;
+    }
+}
+.navside__togger{
+    transform: translateX(0);
+}

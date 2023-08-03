@@ -1,0 +1,14 @@
+/* Tooltip one  */
+.tool-tip-one{
+    margin: 0;
+    padding: 0;
+}
+
+.tool-tip-one-text{
+    color: var(--native, #FFF);
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.72px;
+}

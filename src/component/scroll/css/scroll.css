@@ -1,0 +1,24 @@
+.custom-vertical-scroll::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+.custom-vertical-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+.custom-vertical-scroll::-webkit-scrollbar-thumb {
+    background: #FFB901; 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+.custom-vertical-scroll::-webkit-scrollbar-thumb:hover {
+    background: #FFB901; 
+}
+
+.custom-vertical-scroll{
+    overflow-y: scroll;
+}

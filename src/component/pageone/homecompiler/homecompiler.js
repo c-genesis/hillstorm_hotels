@@ -5,12 +5,21 @@ import Trend from "../trend/trend";
 import Footer from "../footer/footer";
 import styles from './homecompiler.module.css'
 
-function Apptrying() {
+function Apptrying({ user, setUser, allHotels, setActiveHotel, navigateTo }) {
   return (
       <div className={styles.Apptrying}>
-        <Nav />
-        <Hero />
-        <Trend />
+        <Nav 
+          navigateTo={navigateTo}
+          user={user}
+          setUser={setUser}
+        />
+        <Hero 
+          allHotels={allHotels}
+          setActiveHotel={setActiveHotel}
+        />
+        <Trend 
+          allHotels={allHotels}
+        />
         <Footer />
       </div>
   );

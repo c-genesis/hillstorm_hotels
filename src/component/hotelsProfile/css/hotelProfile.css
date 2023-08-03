@@ -1,0 +1,108 @@
+/* Hotel Profile main */
+
+.hotel-profile-main-cover-img{
+    height: 250px;
+    /* background-image: url('../../../images/testHotel/testHotelCover.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hotel-profile-nav-link{
+    cursor: pointer;
+}
+.hotel-profile-nav-link:hover{
+    color: #FFB901;
+}
+.hotel-profile-main-admin-details-container{
+    border-radius: 165.5px 165.5px 0px 0px;
+    border: 2px solid rgba(36, 39, 96, 0.31);
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+}
+.hotel-profile-main-admin-profile-container{
+    border-radius: 100px;
+    border: 1px solid #FFB901;
+}
+.hotel-profile-main-admin-profile-header{
+    color: #000;
+    font-size: 18px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+}
+.hotel-profile-main-admin-profile-sub-text{
+    color: #000;
+    font-size: 15px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;    
+}
+.hotel-profile-main-admin-profile-btn{
+    border-radius: 5px;
+    background: var(--brand-color, #FFB901);
+    color: var(--native, #FFF);
+    font-size: 14px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0.72px; 
+}
+
+
+
+/* Hotel Edit Profile Rooms */
+.hotel-edit-profile-room-number{
+    color: var(--grey, #9B9B9B);
+    font-size: 13px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.52px;    
+}
+
+
+
+/* Hotel Profile RoomCatalogue */
+.hotel-profile-room-catalogue-select-images-container{
+    border: 1px dashed #FFB901;
+}
+
+
+/* Hotel Profile Info */
+.hotel-profile-info-house-rules-container{
+    border-radius: 10px;
+    background: var(--native, #FFF);
+    box-shadow: 5px 4px 30px 0px rgba(0, 0, 0, 0.15);    
+}
+
+.hotel-profile-info-house-rules-header-text{
+    color: #000;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.418px; /* 133.333% */    
+}
+
+.hotel-profile-info-house-rules-text{
+    color: #343434;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */    
+}
+
+.hotel-profile-info-house-rules-text-counter{
+    color: var(--native, #1F1F1F);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */    
+}

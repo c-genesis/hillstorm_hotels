@@ -7,97 +7,55 @@ import invinsibleline from '../../../images/invinsibleline.svg'
 import yellowline from '../../../images/yellowline.svg'
 import axios from 'axios'
 import Lottie from 'lottie-web'
-
-const options = {
-  method: 'GET',
-  url: 'https://booking-com.p.rapidapi.com/v1/hotels/reviews-filter-metadata',
-  params: {
-    locale: 'en-gb',
-    hotel_id: '1676161'
-  },
-  headers: {
-    'X-RapidAPI-Key': '1c9c7952afmshe51822e3292d43fp1e0773jsncae69c859c83',
-    'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
-  }
-};
-
-function Trend() {
-
-  const [rapidHotels, setRapidHotels] = useState()
-
-  const container = useRef(null)
-
-  useEffect(() => {
-    myfunc()
-  }, [])
+import NoState from '../../noState/NoState'
 
 
-  useEffect(() => {
-    Lottie.loadAnimation({
-      container: container.current,
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      animationData: require('../../../images/phoneAnimation.json')
+
+function Trend({ allHotels }) {
+  if(allHotels){
+
+    const displayHotels = allHotels.data && allHotels.data.map((hotel, i) => {
+      const { profileimg, coverimg, hotelname, hotelRooms, rating, state, city } = hotel
+
+      // console.log(hotelRooms)
+
+      const pricing = hotelRooms[0].pricing.filter(p => p.type == 'daily')[0]
+      const dialyPrice = pricing.value
+
+      return (
+        <div className={styles.everything} key={i}>
+          <div 
+            className='background-image'
+            style={{
+              backgroundImage: `url(${coverimg})`,
+              height: '40vh',
+              width: '100%'
+            }}
+          />          
+          <div className={styles.bottom}>
+            <div className={styles.lefty}>
+              <div className={styles.leftyone}>{hotelname} hotel</div>
+              <div className={`${styles.leftytwo} text-capitalize`}>{state}, {city}</div>
+              <div className={styles.leftythree}>Daily &#8358;{dialyPrice}</div>
+            </div>
+            <div className={styles.righty}> <img src={ratting} alt="" />{rating}</div>
+          </div>
+        </div>        
+      )
     })
-  }, [])
 
-  const myfunc = async () => {
-    try {
-      const response = await axios.request(options);
-      const { data } = response
-      setRapidHotels(data)
-      console.log(data)
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
-  if(rapidHotels){
     return (
       <>
       <div className={styles.containerss}>
         <div className={styles.containerchild}>
           <div  className={styles.listing}>
-            <p className={styles.seen}>SEE WHAT IS HOT </p>
-            <p className={styles.whatis}>TRENDING</p>
+            <p className={styles.seen}>NEED A PLACE TO STAY?</p>
+            <p className={styles.whatis}>TRENDING HOTELS</p>
           </div>
           <div className={styles.general}>
-            {trending.map((tra) => (
-                <div className={styles.everything} key={tra.id}>
-                  <img src={tra.image} alt="" className={styles.resizing} />
-                  <div className={styles.bottom}>
-                    <div className={styles.lefty}>
-                      <div className={styles.leftyone}>{tra.hotelNames}</div>
-                      <div className={styles.leftytwo}>{tra.location}</div>
-                      <div className={styles.leftythree}>&#8358;{tra.price}</div>
-                    </div>
-                    <div className={styles.righty}> <img src={ratting} alt="" /> {tra.rating}</div>
-                  </div>
-                </div>
-            ))}
-          </div>
-        </div>
-  
-        <div className={styles.containerchild}>
-          <div  className={styles.listing}>
-            <p className={styles.seen}>SEE WHAT IS HOT </p>
-            <p className={styles.whatis}>TRENDING</p>
-          </div>
-          <div className={styles.general}>
-            {trending.map((tra) => (
-                <div className={styles.everything} key={tra.id}>
-                  <img src={tra.image} alt="" className={styles.resizing} />
-                  <div className={styles.bottom}>
-                    <div className={styles.lefty}>
-                      <div className={styles.leftyone}>{tra.hotelNames}</div>
-                      <div className={styles.leftytwo}>{tra.location}</div>
-                      <div className={styles.leftythree}>&#8358;{tra.price}</div>
-                    </div>
-                    <div className={styles.righty}> <img src={ratting} alt="" /> {tra.rating}</div>
-                  </div>
-                </div>
-            ))}
+            {
+              displayHotels
+            }
           </div>
         </div>
       </div>
@@ -123,58 +81,10 @@ function Trend() {
         </div>
         <div className={styles.carnivalthree}></div>
       </div>
-  
-      <div className={styles.citigars}>
-        {street.map((area) =>         
-          (
-            <div className={styles[`${area.styling}`]} key={area.id}>
-              <div className={styles.lastend}>
-                <div className={styles.simpleone}>
-                  <div className={styles.firstlymapped}>{area.city}</div>
-                  <img src={invinsibleline} alt=""  className={styles.letsdoit}/>
-                  <div className={styles.properties}><p>100+</p> <p> properties</p></div>
-                </div>
-                <div className={styles.simpletwo}>
-                  {area.lorem}
-                </div>
-                <div className={styles.simplethree}><img src={yellowline} alt="" /></div>
-              </div>
-            </div>
-        ))}
-      </div>
-      
-      <div className={styles.containerchild}>
-        <div  className={styles.listing}>
-          <p className={styles.seen}>SEE WHAT IS HOT </p>
-          <p className={styles.whatis}>TRENDING</p>
-        </div>
-        <div className={styles.general}>
-          {trending.map((tra) => (
-            <>
-              <div className={styles.everything} key={tra.id}>
-                <img src={tra.image} alt="" className={styles.resizing} />
-                <div className={styles.bottom}>
-                  <div className={styles.lefty}>
-                    <div className={styles.leftyone}>{tra.hotelNames}</div>
-                    <div className={styles.leftytwo}>{tra.location}</div>
-                    <div className={styles.leftythree}>&#8358;{tra.price}</div>
-                  </div>
-                  <div className={styles.righty}> <img src={ratting} alt="" /> {tra.rating}</div>
-                </div>
-              </div>
-            </>
-          ))}
-        </div>
-      </div>
       </>
     )
   } else{
-    return  <p>
-              {/* <lottie animationData={phoneAnimation} /> */}
-              <div className={styles.container} ref={container}></div>
-              <p className={styles.loading}>Loading hotels...</p>
-            </p>
-    // return <p className={styles.loading}>Loading hotels...</p>
+    return  <NoState />
   }
 }
 
